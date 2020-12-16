@@ -1,0 +1,4 @@
+#!/bin/bash
+jar=$(ls build/libs/)
+LIB_PATH=build/libs/$jar
+java -javaagent:$LIB_PATH $@
